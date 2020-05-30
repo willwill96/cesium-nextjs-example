@@ -5,11 +5,17 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "fmt": "prettier \"**/*.{js,jsx,ts,tsx,json}\" --write"
   },
   "dependencies": {
+    "cesium": "^1.69.0",
+    "copy-webpack-plugin": "^6.0.1",
     "next": "9.4.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
   }
 }
