@@ -1,5 +1,6 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const path = require('path')
+
 module.exports = {
   webpack: (config, { webpack, isServer }) => {
     if (!isServer) {
@@ -43,6 +44,8 @@ module.exports = {
         CESIUM_BASE_URL: JSON.stringify('/Cesium'),
       })
     )
+    config.resolve.exportsFields = []
+    // return {...config, resolve: {...config.resolve, exportsFields:[]}}
     return config
   },
 }

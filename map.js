@@ -6,5 +6,5 @@ export default () => {
       terrainProvider: createWorldTerrain(),
     })
   }, [])
-  return <div id="cesiumContainer" />
+  return <div id="cesiumContainer" style={{height: '100vh', width: '100vw'}} />
 }
